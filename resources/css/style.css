@@ -67,6 +67,8 @@ header {
 
 .banner img {
   margin: 20rem 30rem;
+  border-radius: 10%;
+  border: 1px solid black;
 }
 
 /* Headline Styling */
@@ -147,6 +149,10 @@ header {
   margin-top: 1rem;
 }
 
+.isample img {
+  border-radius: 5px;
+}
+
 /* testimonials */
 .testimonial {
   background-color: #e1e2ec;
@@ -167,17 +173,17 @@ header {
   text-align: center;
 }
 
+.itest img {
+  margin: 0 3rem;
+  width: 80%;
+  border-radius: 50%;
+}
+
 .itest-t p {
   padding-top: 1rem;
 }
 
 /* Google Map Styling */
-.map img {
-  width: 80%;
-  margin: 0 7rem;
-  height: auto;
-}
-
 .map h2 {
   padding: 3rem;
 }
