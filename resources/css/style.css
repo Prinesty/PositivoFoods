@@ -1,0 +1,208 @@
+/* Standard Styling Throughout Page */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #008080;
+  font-family: "Yellowtail", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.2;
+  color: rgb(94, 94, 94);
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+
+/* Main banner Styling */
+.banner {
+  background-image: url("../images/perfecto.png");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 35rem;
+}
+
+.banner img {
+  margin: 20rem 30rem;
+}
+
+/* Headline Styling */
+.headline {
+  padding: 2rem;
+  border-bottom: 1px solid #000000;
+}
+
+.headline h3 {
+  color: #008080;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+  padding-top: 1rem;
+}
+
+.headline p {
+  background-color: #008080;
+  border-radius: 2px;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  color: #ffffff;
+  word-spacing: 5px;
+}
+
+/* Social Styling */
+.social {
+  margin: 4rem 0;
+}
+
+.social a {
+  padding: 0 3rem;
+  color: #008080;
+}
+
+/* Services Styling */
+.services {
+  background-color: #e1e2ec;
+}
+
+.services h2 {
+  padding: 3rem;
+}
+
+.service-text {
+  width: 50%;
+  margin: 0 3rem;
+}
+
+.service-row img {
+  width: 50%;
+  height: 20rem;
+}
+
+.service-text h3 {
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.service-text p {
+  text-align: center;
+}
+
+/* Sample Menu Styling */
+.menu h2 {
+  padding: 3rem;
+}
+
+.samples {
+  margin: 0 3rem;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+
+.isample-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* testimonials */
+.testimonial {
+  background-color: #e1e2ec;
+}
+
+.testimonial h2 {
+  padding: 3rem;
+}
+
+.test-row {
+  margin: 0 3rem;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+
+.itest-t {
+  padding: 2rem;
+  text-align: center;
+}
+
+.itest-t p {
+  padding-top: 1rem;
+}
+
+/* Google Map Styling */
+.map img {
+  width: 80%;
+  margin: 0 7rem;
+  height: auto;
+}
+
+.map h2 {
+  padding: 3rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #000000;
+}
+
+footer .social-f {
+  padding: 3rem;
+}
+
+.social-f a {
+  color: #008080;
+  padding: 0 2rem;
+}
+
+.company-name h3, p {
+  text-align: center;
+  color: #008080;
+  padding-bottom: 1rem;
+}
+
+.copyright {
+  margin: 0 5rem;
+  justify-content: space-between;
+}
+
+.copyright p {
+  color: rgb(94, 94, 94);
+}
