@@ -62,12 +62,13 @@ header {
   background-image: url("../images/perfecto.png");
   background-size: cover;
   background-position: center;
+  width: auto;
   height: 35rem;
 }
 
 .banner img {
   margin: 20rem 30rem;
-  border-radius: 10%;
+  border-radius: 4px;
   border: 1px solid black;
 }
 
