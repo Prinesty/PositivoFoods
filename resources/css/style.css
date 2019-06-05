@@ -61,7 +61,7 @@ header {
 .banner {
   background-image: url("../images/perfecto.png");
   background-size: cover;
-  background-repeat: repeat;
+  background-position: center;
   height: 35rem;
 }
 
