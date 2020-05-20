@@ -4,12 +4,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Lora", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .flex-row {
@@ -26,6 +22,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 4px;
 }
 
 h2 {
@@ -68,8 +69,8 @@ header {
 
 .banner img {
   margin: 20rem 30rem;
-  border-radius: 4px;
-  border: 1px solid black;
+  border-radius: 7px;
+  border: 2px solid black;
 }
 
 /* Headline Styling */
@@ -82,14 +83,14 @@ header {
   color: #008080;
   word-spacing: 0.2rem;
   letter-spacing: 0.2rem;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .headline p {
   background-color: #008080;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 1rem;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   color: #ffffff;
   word-spacing: 5px;
 }
