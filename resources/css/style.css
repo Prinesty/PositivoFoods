@@ -1,11 +1,13 @@
 /* Standard Styling Throughout Page */
-html {
+html,
+body {
   font-size: 16px;
+  font-family: "Lora", sans-serif;
 }
 
-body {
+.container {
+  max-width: 960px;
   margin: 0 auto;
-  font-family: "Lora", sans-serif;
 }
 
 .flex-row {
@@ -49,55 +51,61 @@ p {
   color: rgb(94, 94, 94);
 }
 
-/* Header Styling */
-header {
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 1rem;
-}
-
-
 /* Main banner Styling */
 .banner {
   background-image: url("../images/perfecto.png");
   background-size: cover;
   background-position: center;
-  width: auto;
-  height: 35rem;
+  height: 35em;
+  padding-top: 1rem;
 }
 
-.banner img {
-  margin: 20rem 30rem;
-  border-radius: 7px;
+nav {
+  background-color: #008080;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+}
+
+li {
+  display: inline-block;
+  padding: 0 7rem;
+}
+
+.container img {
+  border-radius: 5px;
   border: 2px solid black;
+  margin: auto;
+  margin-top: 17em;
+  display: block;
 }
 
 /* Headline Styling */
-.headline {
+.quote {
   padding: 2rem;
   border-bottom: 1px solid #000000;
 }
 
-.headline h3 {
+.quote h3 {
   color: #008080;
   word-spacing: 0.2rem;
   letter-spacing: 0.2rem;
   padding: 1rem;
 }
 
-.headline p {
+.quote p {
   background-color: #008080;
   border-radius: 4px;
   padding: 1rem;
-  margin-left: 1rem;
   color: #ffffff;
-  word-spacing: 5px;
+  word-spacing: 8px;
 }
 
 /* Social Styling */
 .social {
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
 .social a {
@@ -145,13 +153,12 @@ header {
   padding-bottom: 3rem;
 }
 
-.isample-text {
-  display: flex;
+.sample-text {
   justify-content: space-between;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
-.isample img {
+.sample img {
   border-radius: 5px;
 }
 
@@ -178,7 +185,7 @@ header {
 .itest img {
   margin: 0 3rem;
   width: 80%;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .itest-t p {
@@ -187,7 +194,17 @@ header {
 
 /* Google Map Styling */
 .map h2 {
-  padding: 3rem;
+  padding: 3rem 0;
+}
+
+.map {
+  margin-bottom: 2rem;
+}
+
+.map img {
+  width: 100%;
+  margin: auto;
+  color: teal;
 }
 
 /* Footer Styling */
@@ -204,7 +221,8 @@ footer .social-f {
   padding: 0 2rem;
 }
 
-.company-name h3, p {
+.company-name h3,
+ p {
   text-align: center;
   color: #008080;
   padding-bottom: 1rem;
@@ -217,4 +235,54 @@ footer .social-f {
 
 .copyright p {
   color: rgb(94, 94, 94);
+}
+
+/** Media Query **/
+@media only screen and (max-width : 940px) {
+  li {
+    padding: 0 1rem;
+  }
+
+  .samples {
+    flex-wrap: wrap;
+  }
+
+  .test-row {
+    flex-wrap: wrap;
+  }
+
+  .itest {
+    width: 50%;
+  }
+
+  .itest-t h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .service-row img {
+    height: 15rem;
+  }
+
+  .service-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid maroon;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .copyright {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .copyright p {
+    padding: 2rem 0;
+  }
 }
