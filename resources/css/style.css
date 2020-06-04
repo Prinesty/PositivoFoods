@@ -296,10 +296,6 @@ footer .social-f {
 
 /** Media Query **/
 @media only screen and (max-width : 940px) {
-  #phone {
-    visibility: hidden;
-  }
-
   li {
     padding: 0 1rem;
   }
@@ -322,10 +318,6 @@ footer .social-f {
 }
 
 @media only screen and (max-width: 720px) {
-  #phone {
-    visibility: hidden;
-  }
-
   .service-row img {
     height: 15rem;
   }
