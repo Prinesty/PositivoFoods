@@ -5,92 +5,120 @@
     <title>Positivo Foods</title>
     <link type="text/css" rel="stylesheet" href="resources/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Yellowtail&display=swap" rel="stylesheet">
-    <link rel="stylesheet"type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="resources/css/style.css">
   </head>
   <body>
     <!-- Header of PositivoFoods -->
     <div class="banner">
-      <div class="container">
-        <nav>
-          <ul>
-            <a href="#"><li>About us</li></a>
-            <a href="#"><li>Services</li></a>
-            <a href="#"><li>Contact us</li></a>
+      <nav class="min">
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a class="ad" href="#">Order Online</a></li>
           </ul>
-        </nav>
+        </div>
+      </nav>
+      <div class="company-logo container">
         <a href="#"><img src="./resources/images/positivo-logos.png" alt="food-setting"></a>
       </div>
     </div>
 
     <!-- Headline -->
-    <div class="container flex-row">
+    <div class="headline container">
       <div class="quote">
-        <h3>Fresh. Healthy. Personal</h3>
-        <a href="#"><p>GET QUOTE</p></a>
+        <h3>Fresh. Healthy. Personal.</h3>
+        <a href="#">GET QUOTE <i class="fa fa-angle-right fa-lg"></i> </a>
       </div>
     </div>
 
     <!-- Header Social -->
-    <div class="container flex-row">
-      <div class="social">
-        <a href="facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-        <a href="twitter.com/prinesty" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="instagram.com" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+    <div class="container">
+      <div class="social flex-around">
+        <a href="facebook.com" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
+        <a href="twitter.com/prinesty" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+        <a href="instagram.com" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
       </div>
     </div>
 
     <!-- Services Provided by Positivo -->
     <div class="services">
-      <h2>Services</h2>
-      <div class="service">
-        <div class="service-row flex-row">
-          <img src="./resources/images/positivo-glasses.png" alt="">
-          <div class="service-text flex-col">
-            <h3>Healthy Options</h3>
-            <p>Great taste is the name of the game and we're committed to stepping up to the plate. Our goal is provide delicious, natural options. That's why we prepare all of our meals with fresh, locally sourced ingredients.</p>
-          </div>
+      <h2>Services <i class="fa fa-cutlery fa-lg"></i></h2>
+      <div class="service flex-row">
+        <img src="./resources/images/positivo-glasses.png" alt="glasses">
+        <div class="notes flex-col">
+          <h3>Healthy Options</h3>
+          <p>Great taste is the name of the game and we're committed to stepping up to the plate. Our goal is provide delicious, natural options. That's why we prepare all of our meals with fresh, locally sourced ingredients.</p>
         </div>
-        <div class="service-row flex-row">
-          <div class="service-text flex-col">
-            <h3>Catering</h3>
-            <p>Are you looking for someone to provide the food at your next event? Large or small, we do it all! Get in touch to start planning the perfect meal for a business lunch, wedding, cocktail reception, and more!</p>
-          </div>
-          <img src="./resources/images/dessert 2.png" alt="">
+      </div>
+      <div class="service flex-row">
+        <div class="notes flex-col">
+          <h3>Catering</h3>
+          <p>Are you looking for someone to provide the food at your next event? Large or small, we do it all! Get in touch to start planning the perfect meal for a business lunch, wedding, cocktail reception, and more!</p>
         </div>
-        <div class="service-row flex-row">
-          <img src="./resources/images/salad-bowl.png" alt="">
-          <div class="service-text flex-col">
-            <h3>Meal Planning</h3>
-            <p>In today's culture of unhealthy fast food, eating well can be difficult. Don't know where to start? Let us help with our tailored catering menu. Get in touch so we can work together to plan something that's right for you.</p>
-          </div>
+        <img src="./resources/images/dessert 2.png" alt="">
+      </div>
+      <div class="service flex-row">
+        <img src="./resources/images/salad-bowl.png" alt="">
+        <div class="notes flex-col">
+          <h3>Meal Planning</h3>
+          <p>In today's culture of unhealthy fast food, eating well can be difficult. Don't know where to start? Let us help with our tailored catering menu. Get in touch so we can work together to plan something that's right for you.</p>
         </div>
       </div>
     </div>
 
     <!-- Sample Menu -->
     <div class="menu">
-      <h2>Sample Menu</h2>
-      <div class="samples flex-row">
+      <h2>Sample Menu <i class="fa fa-clipboard fa-lg"></i></h2>
+      <div class="samples flex-around">
         <div class="sample">
           <img src="./resources/images/gallery1.png" alt="">
           <div class="sample-text flex-row">
-            <h4>Vegetable Pie</h4>
+            <p>Vegetable Pie</p>
             <p>$5.70each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery2.png" alt="">
           <div class="sample-text flex-row">
-            <h4>Assorted Greenies</h4>
+            <p>Assorted Greenies</p>
             <p>$12.70each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery3.png" alt="">
           <div class="sample-text flex-row">
-            <h4>Cousera Brunch</h4>
+            <p>Cousera Brunch</p>
             <p>$20.70each</p>
+          </div>
+        </div>
+        <div class="sample">
+          <img src="./resources/images/gallery4.png" alt="">
+          <div class="sample-text flex-row">
+            <p>Floral Service</p>
+            <p>$99.99each</p>
+          </div>
+        </div>
+        <div class="sample">
+          <img src="./resources/images/gallery5.png" alt="">
+          <div class="sample-text flex-row">
+            <p>Bouquet Package</p>
+            <p>$2.99each</p>
+          </div>
+        </div>
+        <div class="sample">
+          <img src="./resources/images/gallery6.png" alt="">
+          <div class="sample-text flex-row">
+            <p>Pizza</p>
+            <p>$30.77each</p>
           </div>
         </div>
       </div>
@@ -98,51 +126,54 @@
 
     <!-- Testimonials -->
     <div class="testimonial">
-      <h2>Testimonials</h2>
-      <div class="test-row flex-row">
-        <div class="itest">
+      <h2>Testimonials <i class="fa fa-comments fa-lg"></i></h2>
+      <div class="test-row flex-around">
+        <div class="test">
           <img src="./resources/images/P4.png" alt="">
-          <div class="itest-t">
+          <div class="test1">
             <h3>Solomon</h3>
             <p>"Its indeed tasty to the last bite. Worthy it"</p>
           </div>
         </div>
-        <div class="itest">
+        <div class="test">
           <img src="./resources/images/P2.png" alt="">
-          <div class="itest-t">
+          <div class="test1">
             <h3>Prillaish</h3>
             <p>"Anything but the best is Positivo Foods"</p>
           </div>
         </div>
-        <div class="itest">
+        <div class="test">
           <img src="./resources/images/P3.png" alt="">
-          <div class="itest-t">
+          <div class="test1">
             <h3>Siisi</h3>
             <p>"Make sure you try their cookie platter."</p>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Google Map -->
     <div class="map container">
-      <h2>Get Directions</h2>
-      <img src="./resources/images/map.png" alt="">
+      <h2>Get Directions <i class="fa fa-location-arrow fa-lg"></i></h2>
+      <h3>PositivoFoods</h3>
+      <h3>123St Johns Dome Pillar 2</h3>
+      <h3>Ghana Post Address: GE-338-9893</h3>
+      <h3>Contact: 233 205772811</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3970.4298629490163!2d-0.22012542531903248!3d5.650784249078436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99803da1a95b%3A0x5f2e341d9a53de3c!2sParadise%20Wings!5e0!3m2!1sen!2sgh!4v1591358881280!5m2!1sen!2sgh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
+
     <!-- Footer with Contact -->
     <footer>
-      <div class="social-f flex-row">
-        <a href="facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-        <a href="twitter.com/prinesty" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-        <a href="instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-      </div>
-      <div class="company-name">
-        <h3>Positivo Foods</h3>
-        <p>Paradise Estates, Jasmine Street, Plot 13, Accra, Ghana</p>
-        <p style="color: white">233 20 577 2811</p>
-      </div>
-      <div class="copyright flex-row">
-        <p>Copyright &copy 2018- 2020 Positivo Foods - All Rights Reserved.</p>
-        <p>Powered by Dope Tech</p>
+      <div class="flex final">
+        <div>
+          <p>Made with <i class="fa fa-heart fa-lg"></i> in Sunflower Street, Accra</p>
+        </div>
+        <div class="flex step">
+          <p>&copy Positivo, Inc.</p>
+          <p><a href="#">Terms</a></p>
+          <p><i class="fa fa-plus fa-lg"></i></p>
+          <p><a href="#">Privacy</a></p>
+        </div>
       </div>
     </footer>
   </body>
