@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .flex-around {
@@ -55,8 +55,24 @@ h3 {
 
 p {
   line-height: 1.5;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #008080;
+}
+
+.testimonial h2,
+.sample-menu h2,
+.services h2,
+.map h2 {
+  padding-bottom: 4rem;
+}
+
+.headline,
+.social,
+.services,
+.sample-menu,
+.testimonial,
+.map {
+  padding: 4rem;
 }
 
 /* Main banner Styling */
@@ -69,9 +85,7 @@ p {
 }
 
 .company-logo img {
-  border-radius: 5px;
-  border: 1px solid white;
-  margin: auto;
+  border-radius: 10px;
 }
 
 /* Hamburger Styling */
@@ -90,41 +104,46 @@ p {
 }
 
 nav a {
+  text-transform: uppercase;
   color: #ffffff;
   transition: color 200ms ease-out 100ms;
 }
 
 nav a:hover {
-  color: black;
   text-decoration: underline;
 }
 
-.min .menu {
+nav a:active {
+  color: black;
+}
+
+.ham .menu {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: -50%;
+  left: -100%;
   border-radius: 3px;
-  margin-left: -4rem;
-  width: 12%;
-  height: 15rem;
+  height: auto;
   background-color: teal;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: left 400ms ease-in-out 300ms;
 }
 
+.menu {
+  padding-top: 3rem;
+}
+
 .menu li {
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 1.2rem;
 }
 
-.min:hover .menu {
+.ham:hover .menu {
   left: 0;
 }
 
 /* Headline Styling */
 .headline {
-  padding: 3rem 0;
   border-bottom: 1px solid #000000;
 }
 
@@ -136,14 +155,13 @@ nav a:hover {
 }
 
 .quote a {
-  background: #008080;
+  background-color: #008080;
   border-radius: 16px;
   padding: 1.5rem 3rem;
   color: #ffffff;
   word-spacing: 1rem;
-  width: auto;
   font-size: 2rem;
-  transition: background 400ms ease-out 200ms, color 400ms ease-out 200ms;
+  transition: background-color 400ms ease-out 200ms, color 400ms ease-out 200ms;
 }
 
 .quote a:hover {
@@ -152,31 +170,31 @@ nav a:hover {
 }
 
 /* Social Styling */
-.social {
-  padding: 3rem 0;
-}
-
 .social a {
   color: #008080;
-  transition: color 200ms ease-in 100ms;
+  transition: color 400ms ease-in 100ms;
 }
 
-.social a:hover {
-  color: #f15560;
+.social a:hover .fa-facebook {
+  color: #3b5998;
 }
+
+.social a:hover .fa-twitter {
+  color: #00acee;
+}
+
+.social a:hover .fa-instagram {
+  color: #3f729b;
+}
+
 
 /* Services Styling */
 .services {
-  padding: 4rem;
   background-color: #e1e2ec;
 }
 
-.services h2 {
-  padding-bottom: 2rem;
-}
-
 .service {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .service .notes {
@@ -184,14 +202,13 @@ nav a:hover {
   margin: 0 3rem;
 }
 
-
 .service img {
   width: 50%;
-  transition: width 1s ease-out 200ms;
+  transition: width 1s ease-out 400ms;
 }
 
 .service img:hover {
-  width: 75%;
+  width: 80%;
 }
 
 .notes h3 {
@@ -199,14 +216,6 @@ nav a:hover {
 }
 
 /* Sample Menu Styling */
-.menu {
-  padding: 4rem;
-}
-
-.menu h2 {
-  padding-bottom: 2rem;
-}
-
 .sample-text {
   justify-content: space-between;
   padding: 1rem 0;
@@ -216,28 +225,23 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.sample {
-  margin-bottom: 2rem;
-}
-
 .sample img {
   border-radius: 5px;
-  width: auto;
 }
 
 /* testimonials */
 .testimonial {
   background-color: #e1e2ec;
-  padding: 4rem;
-}
-
-.testimonial h2 {
-  padding-bottom: 2rem;
 }
 
 .test1 {
   padding: 2rem;
   text-align: center;
+}
+
+.test1 h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .test img {
@@ -246,23 +250,10 @@ nav a:hover {
   border-radius: 10%;
 }
 
-.test1 p {
-  padding-top: 1rem;
-}
-
 /* Google Map Styling */
-.map {
-  padding: 3rem 0;
-}
-
-.map h2 {
-  padding: 2rem 0;
-}
-
 .map iframe {
   width: 100%;
   border-radius: 20px;
-  padding-bottom: 2rem;
 }
 
 .map h3 {
@@ -271,15 +262,51 @@ nav a:hover {
   font-size: 1.3rem;
 }
 
+/** Quick Styling **/
+.quick {
+  background-color: #495057;
+  padding: 2rem 0;
+}
+
+.quick p {
+  text-transform: uppercase;
+  color: #868e96;
+  font-weight: bold;
+}
+
+.quick i {
+  visibility: hidden;
+}
+
+.quick a:hover i{
+  visibility: visible;
+}
+
+.quick a {
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.first i {
+  color: lightsalmon;
+}
+
+.second i {
+  color: #f15560;
+}
+
+.third i {
+  color: cadetblue;
+}
+
 /* Footer Styling */
 footer {
   padding: 2rem 0;
   background-color: #212529;
-  color: white;
 }
 
 footer p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: white;
   opacity: 0.7;
 }
@@ -289,7 +316,6 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
   text-decoration: underline;
 }
 
@@ -309,51 +335,11 @@ footer a:hover {
 
 @media only screen and (max-width : 940px) {
 
-  .samples {
-    flex-wrap: wrap;
-  }
-
   .test-row {
     flex-wrap: wrap;
   }
-
-  .test {
-    width: 50%;
-  }
-
-  .map h3 {
-    text-align: center;
-  }
-
-  .map iframe {
-    width: 80%;
-  }
-
-  p {
-    line-height: normal;
-    font-size: 1rem;
-  }
 }
 
-@media only screen and (max-width: 720px) {
-  .service-row img {
-    height: 15rem;
-  }
-
-  .service-row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid maroon;
-    padding-bottom: 1rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  
-}
 
 @media only screen
 and (min-device-width: 375px)
