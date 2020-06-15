@@ -6,43 +6,45 @@
     <link type="text/css" rel="stylesheet" href="resources/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="resources/css/style.css">
   </head>
   <body>
     <!-- Header of PositivoFoods -->
-    <div class="banner">
+    <header id="header">
       <nav class="ham">
-        <div class="hamburger">
+        <div aria-label="hamburger design" class="hamburger">
             <div></div>
             <div></div>
             <div></div>
         </div>
         <div>
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a class="ad" href="#">Order Online</a></li>
+          <ul role="presentation" class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#testimonial">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#sample-menu">Menu</a></li>
+            <li><a href="#social">Contact us</a></li>
+            <li><a class="ad" href="#call">Order Online</a></li>
           </ul>
         </div>
       </nav>
-      <div class="company-logo container">
-        <a href="#"><img src="./resources/images/positivo-logos.png" alt="food-setting"></a>
+      <div aria-label="Company Logo" class="company-logo container">
+        <a href="#home" target="_blank"><img src="./resources/images/positivo-logos.png" alt="food-setting"></a>
       </div>
-    </div>
+    </header>
 
     <!-- Headline -->
     <div class="headline container">
-      <div class="quote">
+      <div role="presentation" class="quote">
         <h3>Fresh. Healthy. Personal.</h3>
-        <a href="#">GET QUOTE <i class="fa fa-angle-right fa-lg"></i> </a>
+        <a href="#">GET QUOTE <i class="fa fa-angle-right fa-lg"></i></a>
       </div>
     </div>
 
     <!-- Header Social -->
-    <div class="container">
-      <div class="social flex-around">
+    <div id="social" class="container">
+      <div role="link" class="social flex-around">
         <a href="facebook.com" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
         <a href="twitter.com" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
         <a href="instagram.com" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
@@ -50,17 +52,17 @@
     </div>
 
     <!-- Services Provided by Positivo -->
-    <div class="services">
+    <div id="services" class="services">
       <h2>Services <i class="fa fa-cutlery fa-lg"></i></h2>
       <div class="service flex-row">
         <img src="./resources/images/positivo-glasses.png" alt="glasses">
-        <div class="notes flex-col">
+        <div role="note" class="notes flex-col">
           <h3>Healthy Options</h3>
           <p>Great taste is the name of the game and we're committed to stepping up to the plate. Our goal is provide delicious, natural options. That's why we prepare all of our meals with fresh, locally sourced ingredients.</p>
         </div>
       </div>
       <div class="service flex-row">
-        <div class="notes flex-col">
+        <div role="note" class="notes flex-col">
           <h3>Catering</h3>
           <p>Are you looking for someone to provide the food at your next event? Large or small, we do it all! Get in touch to start planning the perfect meal for a business lunch, wedding, cocktail reception, and more!</p>
         </div>
@@ -68,7 +70,7 @@
       </div>
       <div class="service flex-row">
         <img src="./resources/images/salad-bowl.png" alt="">
-        <div class="notes flex-col">
+        <div role="note" class="notes flex-col">
           <h3>Meal Planning</h3>
           <p>In today's culture of unhealthy fast food, eating well can be difficult. Don't know where to start? Let us help with our tailored catering menu. Get in touch so we can work together to plan something that's right for you.</p>
         </div>
@@ -76,47 +78,47 @@
     </div>
 
     <!-- Sample Menu -->
-    <div class="sample-menu">
+    <div id="sample-menu" class="sample-menu">
       <h2>Sample Menu <i class="fa fa-clipboard fa-lg"></i></h2>
       <div class="samples flex-around">
         <div class="sample">
           <img src="./resources/images/gallery1.png" alt="">
-          <div class="sample-text flex-row">
+          <div role="note" class="sample-text flex-row">
             <p>Vegetable Pie</p>
             <p>$5.70each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery2.png" alt="">
-          <div class="sample-text flex-row">
+          <div role="note" class="sample-text flex-row">
             <p>Assorted Greenies</p>
             <p>$12.70each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery3.png" alt="">
-          <div class="sample-text flex-row">
+          <div role="note" class="sample-text flex-row">
             <p>Cousera Brunch</p>
             <p>$20.70each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery4.png" alt="">
-          <div class="sample-text flex-row">
+          <div role="note" class="sample-text flex-row">
             <p>Floral Service</p>
             <p>$99.99each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery5.png" alt="">
-          <div class="sample-text flex-row">
+          <div role="note" class="sample-text flex-row">
             <p>Bouquet Package</p>
             <p>$2.99each</p>
           </div>
         </div>
         <div class="sample">
           <img src="./resources/images/gallery6.png" alt="">
-          <div class="sample-text flex-row">
+          <div role="note" class="sample-text flex-row">
             <p>Pizza</p>
             <p>$30.77each</p>
           </div>
@@ -125,7 +127,7 @@
     </div>
 
     <!-- Testimonials -->
-    <div class="testimonial">
+    <div id="testimonial" class="testimonial">
       <h2>Testimonials <i class="fa fa-comments fa-lg"></i></h2>
       <div class="test-row flex-around">
         <div class="test">
@@ -153,18 +155,20 @@
     </div>
 
     <!-- Google Map -->
-    <div class="map container">
+    <div id="direction" class="map container">
       <h2>Get Directions <i class="fa fa-location-arrow fa-lg"></i></h2>
-      <h3>Sunflower Street, Dome Pillar 2</h3>
-      <h3>Ghana Post Address: GE-338-9893</h3>
-      <h3>Contact: 233 205772811</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3970.4298629490163!2d-0.22012542531903248!3d5.650784249078436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99803da1a95b%3A0x5f2e341d9a53de3c!2sParadise%20Wings!5e0!3m2!1sen!2sgh!4v1591358881280!5m2!1sen!2sgh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="address">
+        <h3>Sunflower Street, Dome Pillar 2</h3>
+        <h3>Ghana Post Address: GE-338-9893</h3>
+        <h3>Contact: 233 205772811</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3970.4298629490163!2d-0.22012542531903248!3d5.650784249078436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99803da1a95b%3A0x5f2e341d9a53de3c!2sParadise%20Wings!5e0!3m2!1sen!2sgh!4v1591358881280!5m2!1sen!2sgh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
     </div>
 
     <!-- Quicklinks -->
-    <div class="quick flex">
+    <div id="quicklinks" class="quick flex">
       <div class="quicklinks1">
-        <div class="first flex-col">
+        <div role="link" class="first flex-col">
           <p>Updates</p>
           <a href="#">News <i class="fa fa-briefcase fa-lg"></i></a>
           <a href="#">License <i class="fa fa-file fa-lg"></i></a>
@@ -172,7 +176,7 @@
         </div>
       </div>
       <div class="quicklinks2">
-        <div class="second flex-col">
+        <div role="link" class="second flex-col">
           <p>Shortcuts</p>
           <a href="#">Gallery <i class="fa fa-image fa-lg"></i></a>
           <a href="#">Camera <i class="fa fa-camera fa-lg"></i></a>
@@ -181,20 +185,20 @@
         </div>
       </div>
       <div class="quicklinks4">
-        <div class="third flex-col">
+        <div role="link" class="third flex-col">
           <p>Follow us</p>
           <a href="#">Email <i class="fa fa-envelope fa-lg"></i></a>
           <a href="#">Twitter <i class="fa fa-twitter fa-lg"></i></a>
           <a href="#">Facebook <i class="fa fa-facebook fa-lg"></i></a>
           <a href="#">Instagram <i class="fa fa-instagram fa-lg"></i></a>
           <a href="#">YouTube <i class="fa fa-youtube fa-lg"></i></a>
-          <a href="#">Call <i class="fa fa-phone fa-lg"></i> </a>
+          <a id="call" href="#call">Call <i class="fa fa-phone fa-lg"></i> </a>
         </div>
       </div>
     </div>
 
     <!-- Footer with Contact -->
-    <footer>
+    <footer id="footer">
       <div class="flex final">
         <div>
           <p>Made with <i class="fa fa-heart fa-lg"></i> in Sunflower Street, Accra</p>

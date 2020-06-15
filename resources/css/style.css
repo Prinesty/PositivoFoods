@@ -75,8 +75,8 @@ p {
   padding: 4rem;
 }
 
-/* Main banner Styling */
-.banner {
+/* Main Header Styling */
+header {
   background-image: url("../images/perfecto.png");
   background-size: cover;
   background-position: center;
@@ -99,7 +99,7 @@ p {
 .hamburger div {
   width: 2.5rem;
   height: 6px;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
   background-color: teal;
 }
 
@@ -121,7 +121,7 @@ nav a:active {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: -100%;
+  left: -50%;
   border-radius: 3px;
   height: auto;
   background-color: teal;
@@ -134,13 +134,14 @@ nav a:active {
 }
 
 .menu li {
-  padding: 1.5rem;
+  padding: 1.2rem;
   font-size: 1.2rem;
 }
 
 .ham:hover .menu {
   left: 0;
 }
+
 
 /* Headline Styling */
 .headline {
